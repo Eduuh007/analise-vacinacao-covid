@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Análise de Vacinação COVID-19</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Plugin para mostrar valores nas barras -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+  <header>
+    <h1>📊 Análise de Dados de Vacinação COVID-19</h1>
+  </header>
+
+  <section class="filtros">
+    <label for="regiao">Região:</label>
+    <select id="regiao">
+      <option value="todas">Todas</option>
+      <option value="norte">Norte</option>
+      <option value="nordeste">Nordeste</option>
+      <option value="sudeste">Sudeste</option>
+      <option value="sul">Sul</option>
+      <option value="centro-oeste">Centro-Oeste</option>
+    </select>
+
+    <label for="idade">Faixa Etária:</label>
+    <select id="idade">
+      <option value="todas">Todas</option>
+      <option value="0-17">0-17 anos</option>
+      <option value="18-59">18-59 anos</option>
+      <option value="60+">60 anos ou mais</option>
+    </select>
+
+    <label for="ano">Ano:</label>
+    <select id="ano">
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+    </select>
+  </section>
+
+  <section class="grafico-container">
+    <canvas id="grafico-vacinacao"></canvas>
+  </section>
+
+  <section class="tabela-container">
+    <table id="tabela-vacinacao">
+      <thead>
+        <tr>
+          <th>Posição</th>
+          <th>Localidade</th>
+          <th>Doses Aplicadas</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
