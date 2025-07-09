@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💉 Análise de Dados de Vacinação COVID-19
 
 Projeto web que apresenta uma análise interativa dos dados de vacinação contra COVID-19 no Brasil.  
@@ -43,3 +44,7 @@ Inclui gráficos de doses aplicadas por estado/cidade, tabela de ranking dos loc
 
 Desenvolvido por [Eduardo Martins](https://github.com/Eduuh007)  
 [LinkedIn](https://www.linkedin.com/in/eduardo-martins-575521245)
+=======
+# analise-vacinacao-covid
+Análise interativa dos dados de vacinação contra COVID-19 no Brasil, com gráficos, tabelas e filtros dinâmicos. Projeto feito com HTML, CSS, JavaScript e Chart.js.
+>>>>>>> b8e7089183033f3fc613265418def47971673201
